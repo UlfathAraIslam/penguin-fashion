@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Container holding both the info and shopping sections */
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center; /* Aligns content vertically in the center */
+  padding: 20px;
+}
+
+/* Info container that holds the image and text */
+.info {
+  display: flex;
+  align-items: center; /* Aligns the image and text vertically */
+  gap: 20px; /* Adds space between the image and the text */
+}
+
+.info-img {
+  width: 50px; /* You can adjust this size */
+  height: auto;
+}
+
+.info-text h4 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.info-text p {
+  margin: 5px 0;
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Shopping image section */
+.shopping {
+  flex-shrink: 0; /* Prevents the shopping image from shrinking */
+}
+
+.shopping-img {
+  width: 200px; /* Adjust the width as needed */
+  height: auto;
+}
+    </style>
+</head>
+<body>
+        <div class="container">
+            <!-- info container -->
+            <div class="info">
+                <img class="info-img" src="./icons/house.png" alt="">
+                <div>
+                    <h4>Find the Perfect Fit</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet, sed nobis ipsam provident inventore distinctio?</p>
+                </div>
+            </div>
+            <div>
+                <!-- img -->
+                <img class="shopping-img" src="./images/shopping.png" alt="">
+            </div>
+        </div>
+</body>
+</html>
